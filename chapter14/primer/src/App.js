@@ -14,7 +14,7 @@ export default class App extends Component {
         this.setState({ counter: this.state.counter + 1 });
     }
 
-    // principal render 2
+    // principal render 2.1
     render() {
         return <div className="m-2 text-center">
             <Message theme="primary"
