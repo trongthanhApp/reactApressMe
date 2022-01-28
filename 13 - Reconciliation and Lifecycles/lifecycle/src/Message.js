@@ -26,9 +26,11 @@ export class Message extends Component {
         console.log(`Render Message Component `);
         return (
             <div>
-                <ActionButton theme="primary" {...this.props} 
-                        callback={ this.handleClick } />
-                { this.getMessageElement() }
+                <ActionButton theme="primary" {...this.props} />
+                <div className="h5 text-center p-2">
+                    {this.props.message}
+                </div>
+
             </div>            
         ) 
     }
