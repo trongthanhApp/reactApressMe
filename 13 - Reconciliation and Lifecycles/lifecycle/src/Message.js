@@ -35,7 +35,7 @@ export class Message extends Component {
     }
 
     componentDidMount() {
-        console.log("componentDidMount Message Component");
+        console.log("componentDidMount Message Component 3");
     }
     
     // shouldComponentUpdate(newProps, newState) {
