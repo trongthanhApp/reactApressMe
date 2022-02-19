@@ -33,14 +33,18 @@ export class Message extends Component {
             </div>            
         ) 
     }
-    
-    shouldComponentUpdate(newProps, newState) {
-        let change = newProps.message !== this.props.message;
-        if (change) {
-            console.log(`shouldComponentUpdate ${this.props.text}: Update Allowed`)
-        } else {
-            console.log(`shouldComponentUpdate ${this.props.text}: Update Prevented`)
-        }
-        return change;
+
+    componentDidMount() {
+        console.log("componentDidMount Message Component 6");
     }
+    
+    // shouldComponentUpdate(newProps, newState) {
+    //     let change = newProps.message !== this.props.message;
+    //     if (change) {
+    //         console.log(`shouldComponentUpdate ${this.props.text}: Update Allowed`)
+    //     } else {
+    //         console.log(`shouldComponentUpdate ${this.props.text}: Update Prevented`)
+    //     }
+    //     return change;
+    // }
 }
